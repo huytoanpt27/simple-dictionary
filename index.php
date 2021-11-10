@@ -19,7 +19,7 @@
     </head>
     <body>
         <br/>
-        <h3>Từ Điển Anh - Việt</h3>
+        <h3>Từ Điển Việt - Cơtu</h3>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
           <input type="text" name="search" placeholder="Nhập từ cần tìm"/>
           <input type = "submit" id = "submit" value = "Tìm"/>
@@ -29,10 +29,11 @@
                 $searchword = $_POST["search"];
                 $flag = 0;
                 $dictionary = array(
-                        "hello"=>"xin chào",
-                        "how"=>"thế nào",
-                        "book"=>"quyển vở",
-                        "computer"=>"máy tính");
+                        "yêu"=>"kiên",
+                        "đi"=>"vội",
+                        "uống"=>"um"
+                        "huy"=>"giỏi lắm",
+                        "con trâu"=>"tờ rí");
                 foreach($dictionary as $word => $description) {
                     if($word == $searchword){
                         echo "Từ: " . $word . ". <br/>Nghĩa của từ: " . $description;
