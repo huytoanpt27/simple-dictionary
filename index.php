@@ -29,10 +29,11 @@
                 $searchword = $_POST["search"];
                 $flag = 0;
                 $dictionary = array(
-                        "hello"=>"xin chào",
-                        "how"=>"thế nào",
-                        "book"=>"quyển vở",
-                        "computer"=>"máy tính");
+                        "con trâu"=>"tờ rí",
+                        "con cá"=>"a xiu",
+                        "huy"=>"Pro",
+                        "con gà"=>"a tựt",
+                        "yêu"=>"kiên");
                 foreach($dictionary as $word => $description) {
                     if($word == $searchword){
                         echo "Từ: " . $word . ". <br/>Nghĩa của từ: " . $description;
